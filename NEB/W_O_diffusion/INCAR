@@ -1,0 +1,29 @@
+SYSTEM=Mo                 Name of the system
+NWRITE=2                   ! verbosity write flag
+ISTART=0                   ! startjo: 0-new 1-const 2-samecut
+ISPIN=1                    ! spin polarized calculation (2-yes 1-no)
+INIWAV=1                   ! initial elect. wf : 0-lowe 1-rand
+PREC=Accurate
+NELM=200
+EDIFF=10E-6                ! stopping criterion for electr updt
+EDIFFG=-0.01              ! stopping criterion for + energy - forces
+ENCUT=400                  ! max cut off introduced based on previous calc.
+NSW=400                    ! number of steps for ionic update
+ISIF=2                     ! switch to control if calculate stress tensor etc. and what to relax?
+ISYM=0                     ! symmetry:0-nonsym 1-usesym
+ISMEAR=1                   ! for semiconductor, and using 1 or 2 k points, otherwise <0,=1 for metals
+SIGMA=0.2                  ! broadening in eV -4 tet -1 fermi 0-gaus
+
+LREAL=Auto              ! non local projectors in real space,note:using the same parameters for all calculations to avoid errors
+
+LWAVE=.FALSE. 
+LCHARG=.TRUE.  
+LVTOT=.FALSE.               ! create WAVECAR, CHGCAR,LOCPOT
+
+IBRION=3
+POTIM=0
+IOPT=3
+ICHAIN=0
+LCLIMB=.TRUE.
+SPRING=-5
+IMAGES=1
