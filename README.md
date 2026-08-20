@@ -9,12 +9,15 @@
 
 ## Included files
 
-Only VASP input files are included:
+VASP input files are included:
 
 - POSCAR
-- CONTCAR
 - INCAR
 - KPOINTS
+
+VASP output file is included:
+
+- CONTCAR
 
 ## Note
 
